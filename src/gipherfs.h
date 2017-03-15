@@ -24,7 +24,7 @@
 
 #include <dirent.h>
 
-#include "aes_wrapper_gpu.cuh"
+#include "aes/aes_wrapper_gpu.cuh"
 
 //#include "../fs_utils/include/attr/xattr.h"
 //#include "../fs_utils/fs_util.h"
@@ -42,7 +42,7 @@
 
 //#define INSTR 1
 #define INSTR 0
-#define DEBUG 0
+#define DEBUG 1
 #define BIG_WRITES 1
 
 #define debug_print(fmt, ...) \
