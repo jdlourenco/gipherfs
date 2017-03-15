@@ -29,18 +29,29 @@ cd gipherfs
 edit Makefile
 ```
 
-Edit Makefile by setting FUSE_DIR to the directory returned by the `pwd` command by replacing by replacing INSERT_FUSE_LIB_PATH_HERE. In this case it would be
+Edit Makefile and set FUSE_DIR to the directory returned by the `pwd` command by replacing INSERT_FUSE_LIB_PATH_HERE.
+In this example:
 
 `
 FUSE_DIR=/home/jdpl/fuse-2.9.7
 `
 
-Compile the code:
+gipherfs's uses the following defaults for its mount and backing directories
+
+```c
+#define MOUNT_DIR "/tmp/gipherfs"
+#define BACK_DIR "/tmp/gipherfs_back"
+```
+
+These can be changed by editing `src/gipherfs.h`
+
+
+Run the following command to compile the code:
 ```shell
 make
 ```
 
-And finally run it:
+And finally run it using:
 ```shell
 ./gipherfs
 ```
