@@ -3,7 +3,7 @@ A GPU-accelerated ciphered file system
 
 Running gipherfs:
 
-This guide assumes no root permissions on the target machine
+This guide assumes no root permissions and that CUDA 7.5 development kit is already installed on the target machine. 
 
 Download and compile FUSE 2.9.7 from https://github.com/libfuse/libfuse
 
