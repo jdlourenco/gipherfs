@@ -26,8 +26,11 @@
 
 #include "aes_wrapper_gpu.cuh"
 
-#include "../fs_utils/include/attr/xattr.h"
-#include "../fs_utils/fs_util.h"
+//#include "../fs_utils/include/attr/xattr.h"
+//#include "../fs_utils/fs_util.h"
+
+#include "fs_utils/include/attr/xattr.h"
+#include "fs_utils/fs_util.h"
 
 /*
 #define MOUNT_DIR "/tmp/gipherfs"
