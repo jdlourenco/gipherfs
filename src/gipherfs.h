@@ -37,8 +37,8 @@
 #define BACK_DIR "/tmp/gipherfs_back"
 */
 
-#define MOUNT_DIR "/homelocal/tmp/gipherfs"
-#define BACK_DIR "/homelocal/tmp/gipherfs_back"
+#define MOUNT_DIR "/tmp/gipherfs"
+#define BACK_DIR "/tmp/gipherfs_back"
 
 //#define INSTR 1
 #define INSTR 0
