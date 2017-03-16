@@ -21,7 +21,6 @@ pwd
 Take note of the path returned by calling `pwd` in order to use it to edit the project Makefile.
 
 
-
 ```shell
 cd ~
 git clone https://github.com/jdlourenco/gipherfs.git
@@ -35,6 +34,14 @@ In this example:
 `
 FUSE_DIR=/home/jdpl/fuse-2.9.7
 `
+
+Also make sure that CUDA_LIB_DIR points to the path where CUDA libraries are installed on your machine.
+This is typically `/usr/local/cuda/lib64` or `/usr/local/cuda/lib`
+
+`
+CUDA_LIB_DIR=/usr/local/cuda/lib64
+`
+
 
 gipherfs's uses the following defaults for its mount and backing directories
 
