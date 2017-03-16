@@ -43,7 +43,7 @@ CUDA_LIB_DIR=/usr/local/cuda/lib64
 `
 
 
-gipherfs's uses the following defaults for its mount and backing directories
+gipherfs uses the following defaults for its mount and backing directories
 
 ```c
 #define MOUNT_DIR "/tmp/gipherfs"
