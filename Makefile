@@ -1,9 +1,7 @@
 EXECUTABLE=gipherfs
 FUSE_VERSION=2.9.7
 CUDA_LIBS=-L/opt/cuda/lib64 -lcuda -lcudart -lstdc++
-#FUSE_DIR=/home/jdpl/fuse_latest/fake/fuse-$(FUSE_VERSION)
-#FUSE_DIR=INSERT_FUSE_LIB_PATH_HERE
-FUSE_DIR=/home/jdpl/fuse-2.9.7
+FUSE_DIR=INSERT_FUSE_LIB_PATH_HERE
 HEADERS=-I$(FUSE_DIR)/include/ -Iinclude
 LIBS=-L$(FUSE_DIR)/lib/.libs -Llib/.libs -lfuse -lrt -ldl -lm
 GCC_OPTIONS=-Wall -std=c99
